@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "radio-canada-big", sans-serif;
+  src: url("/fonts/RadioCanadaBig-VariableFont_wght.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "work-sans", sans-serif;
+  src: url("/fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
+  font-display: swap;
+}
+
+::-webkit-scrollbar {
+  background: hsl(218, 47%, 73%);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(217, 217, 217);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: hsla(216, 44%, 19%, 0.346);
+}
+
+:root {
+  background-color: hsl(220, 100%, 99%);
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: hsl(	216.4, 45.2%, 14.3%);
+  }
+}
+*/
