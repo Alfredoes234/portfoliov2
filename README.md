@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### What is used?
 
-- SQLite (Turso)
+- PostgreSQL (Podman container)
 - Drizzle ORM
 - NextJS
 - TailwindCSS

@@ -11,7 +11,10 @@ const skills = pgTable('skills', {
 const projects = pgTable('projects', {
     id: serial('id').primaryKey(),
     title: varchar('title', { length: 256 }),
-    brief: text('brief')
+    brief: text('brief'),
+    content: text('content'),
+    img: text('img'),
+    imgAlt: varchar('img-alt', { length: 256 })
 })
 
 export { skills, projects }; 

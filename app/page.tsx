@@ -63,7 +63,7 @@ export default async function Home() {
           {skill.map(function (data) {
             return (
               <div key={data.id}>
-                <Link href={data.url || ""}><Image src={data.img || ""} alt={data.imgAlt || ""} width={90} height={90} title={data.title || ""} /></Link>
+                <Link href={data.url || ""}><Image src={data.img || ""} alt={data.imgAlt || ""} width={1920} height={1080} title={data.title || ""} className="w-auto h-auto" /></Link>
               </div>
             )
           })}

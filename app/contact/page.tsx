@@ -1,9 +1,5 @@
 import { mailing } from "@/utils/template/template"
 
-async function send_email() {
-	const form = req.FormData()
-	mailing();
-}
 
 
 // Does not need anything fancy just needs to be able to send a email or fake sending an email cause its kinda a hassle (maybe emailjs?)
