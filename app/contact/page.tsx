@@ -1,3 +1,4 @@
+import { SubmitButton } from "@/components/submit"
 import { mailing } from "@/utils/template/template"
 
 
@@ -23,7 +24,7 @@ export default function Contact() {
 						<div>
 							<input type="text" id="message" name="message" />
 						</div>
-						<button type="submit" className="px-12 py-4 rounded bg-primary">Submit</button>
+						<SubmitButton />
 					</form>
 				</div>
 			</div>

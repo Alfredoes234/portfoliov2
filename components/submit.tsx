@@ -1,13 +1,9 @@
-'use client'
-
+"use client"
+import { useFormStatus } from "react-dom";
 
  
-// Could use redux, manage the state of the button (Then visually change based on this?), submit and submitting
+// Don't use redux for things that need to be scoped in its state
 export function SubmitButton() {
- 
-  return (
-    <button type="submit">
-      Add
-    </button>
-  )
+  const { pending } = useFormStatus();
+  return <button disabled={pending} className="px-12 py-4 rounded bg-primary">{pending ? "Submitting..." : "Submit"}</button>
 }
