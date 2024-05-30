@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -12,12 +12,9 @@
     "migrate": "drizzle-kit generate && pnpm dlx tsx utils/db/migrate.ts"
   },
   "dependencies": {
-    "@gsap/react": "^2.1.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.10",
-    "emailjs": "^4.0.3",
-    "github-markdown-css": "^5.5.1",
-    "gsap": "^3.12.5",
+    "framer-motion": "^11.2.9",
     "next": "14.2.3",
     "pg": "^8.11.5",
     "react": "^18.3.1",
@@ -26,12 +23,13 @@
     "react-markdown": "^9.0.1"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.12.13",
     "@types/pg": "^8.11.6",
-    "@types/react": "^18.3.2",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
-    "drizzle-kit": "^0.21.2",
+    "cssnano": "^7.0.1",
+    "drizzle-kit": "^0.21.4",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.3",
     "postcss": "^8.4.38",

@@ -24,7 +24,9 @@ export default function Contact() {
 						<div>
 							<input type="text" id="message" name="message" />
 						</div>
-						<SubmitButton />
+						<button type="submit">
+							Submit
+						</button>
 					</form>
 				</div>
 			</div>

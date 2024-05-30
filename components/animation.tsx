@@ -1,38 +1,19 @@
 'use client'
-import { useRef } from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import { useRef, useState, useEffect } from 'react';
+import { motion } from "framer-motion";
 
-gsap.registerPlugin(useGSAP);
-
-function ButtonRoll() {
-    const container = useRef(null);
-    const { contextSafe } = useGSAP({ scope: container });
-    const onClickGood = contextSafe(() => {
-        let tl = gsap.timeline({ repeat: 0 });
-        tl.to('.good', { rotation: 360 });
-    });
+function Anima() {
+    
     return (
-        <div ref={container}>
-            <button onClick={onClickGood} className="p-5 good">Goof</button>
-        </div>
-    );
-}
-
-function SubmitButton() {
-    const container = useRef();
-    const { contextSafe } = useGSAP({ scope: container });
-    const onClickGood = contextSafe(() => {
-        let tl = gsap.timeline({ repeat: 0 })
-            .to('.btn', { rotation: 360 });
-    });
-
-    return (
-        <button className='btn'>
-            spu
-        </button>
+        <motion.div
+            animate={{ rotate: 360, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            className='w-24'
+        >
+            <p>Buh</p>
+        </ motion.div>
     );
 }
 
 
-export { ButtonRoll, SubmitButton };
+export { Anima };

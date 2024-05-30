@@ -58,12 +58,12 @@ export default async function Home() {
         </div>
       </div>
       <div className="p-10 text-center bg-secondl">
-        <h2 className="text-4xl font-semibold font-rcb">What I am experienced in</h2>
-        <div className="flex justify-center gap-10 py-10">
+        <h2 className="text-5xl font-semibold font-rcb">What I am experienced in</h2>
+        <div className="flex justify-center gap-12 py-10">
           {skill.map(function (data) {
             return (
               <div key={data.id}>
-                <Link href={data.url || ""}><Image src={data.img || ""} alt={data.imgAlt || ""} width={1920} height={1080} title={data.title || ""} className="w-auto h-auto" /></Link>
+                <Link href={data.url || ""}><Image src={data.img || ""} alt={data.imgAlt || ""} width={10} height={10} title={data.title || ""} className="w-24 h-24" /></Link>
               </div>
             )
           })}

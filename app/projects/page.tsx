@@ -6,7 +6,7 @@ import { projects } from "@/utils/db/schema";
 
 
 export default async function Projects() {
-	const project = await db.select().from(projects); 
+	const project = await db.select().from(projects);
 	return (
 		<main className="m-24">
 			<h1 className="my-5 text-4xl font-bold font-rcb">My projects</h1>

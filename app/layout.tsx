@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
-import { AiOutlineMenu, AiOutlineClose, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiOutlineMenu, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 export const metadata: Metadata = {
   title: "Rain",

@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      rcb: ["radio-canada-big", "sans-serif"],
+      rcb: ['"radio-canada-big"', "sans-serif"],
       ws: ["work-sans", "sans-serif"],
     },
     colors: {
