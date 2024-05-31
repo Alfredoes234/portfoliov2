@@ -92,12 +92,15 @@ export default async function Home() {
       </div>
       <div className="m-24">
         <h2 className="text-5xl font-semibold font-rcb">Latest Projects</h2>
-        <div className="flex gap-10 py-5">
+        <div className="flex gap-12 py-5">
           {project.map(function (projects) {
             return (
-              <Link href={`/projects/${projects.title}`} key={projects.id} className="p-10 rounded bg-secondary">
-                <h3>{projects.title}</h3>
-                <p>{projects.brief}</p>
+              <Link href={`/projects/${projects.title}`} key={projects.id} className="p-10 rounded-xl bg-secondary">
+                <Image src={projects.img || "/images/baloon.webp"} width={1920} height={1080} alt={projects.imgAlt || ""} priority={true} className="w-full h-auto rounded" />
+                <div className="my-10">
+                  <h3 className="text-2xl font-semibold capitalize">{projects.title}</h3>
+                  <p>{projects.brief}</p>
+                </div>
               </Link>
             )
           })}

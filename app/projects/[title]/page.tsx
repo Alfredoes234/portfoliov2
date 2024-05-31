@@ -16,8 +16,8 @@ export default async function Project({ params }: { params: { title: string } })
 				{data.map(function (pdata) {
 					return (
 						<div key={pdata.id}>
-							<h2>{pdata.brief}</h2>
-							<div className='markdown-body my-5'>
+							<h2 className="my-3">{pdata.brief}</h2>
+							<div className='my-5 markdown-body'>
 								<Markdown className="whitespace-pre-wrap">
 									{pdata.content || ""}
 								</Markdown>
