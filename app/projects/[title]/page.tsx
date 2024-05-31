@@ -11,7 +11,7 @@ export default async function Project({ params }: { params: { title: string } })
 	const data = await db.select().from(projects).where(eq(projects.title, title));
 	return (
 		<main className="m-24">
-			<h1 className="text-4xl font-bold capitalize font-rcb">{params.title || ""}</h1>
+			<h1 className="text-6xl font-bold capitalize font-rcb">{params.title || ""}</h1>
 			<div>
 				{data.map(function (pdata) {
 					return (

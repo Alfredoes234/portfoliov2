@@ -1,9 +1,18 @@
+
+
 .markdown-body h2 {
-  font-weight: var(--base-text-weight-semibold, 600);
-  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "radio-canada-big", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1;
 }
 
 .markdown-body img {
-    width: 10%;
-    height: auto;
+    width: 36rem;
+}
+
+.markdown-body p {
+  font-family: "work-sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
 }

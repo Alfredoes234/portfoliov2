@@ -23,9 +23,9 @@ export default function RootLayout({
               <span className="absolute left-0 w-0 h-2 transition-all -bottom-1 group-hover:w-full bg-accent"></span>
             </Link>
             <div className="hidden gap-10 text-2xl md:flex">
-              <Link href="/projects" >Projects</Link>
-              <Link href="/about-me">About Me</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/projects" className="relative group"><p className="group-hover:text-bl2">Projects</p><span className="absolute left-0 w-0 h-2 transition-all -bottom-1 group-hover:w-full bg-accent"></span></Link>
+              <Link href="/about-me" className="relative group"><p className="group-hover:text-bl2">About Me</p><span className="absolute left-0 w-0 h-2 transition-all -bottom-1 group-hover:w-full bg-accent"></span></Link>
+            <Link href="/contact" className="relative group"><p className="group-hover:text-bl2">Contact</p><span className="absolute left-0 w-0 h-2 transition-all -bottom-1 group-hover:w-full bg-accent"></span></Link>
             </div>
             <div className="right-0 md:hidden">
               <button>
