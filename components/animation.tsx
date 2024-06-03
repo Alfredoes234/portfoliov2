@@ -3,7 +3,6 @@ import { useRef, useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 
 function Anima() {
-    
     return (
         <motion.div
             animate={{ rotate: 360, opacity: 1 }}

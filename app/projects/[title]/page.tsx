@@ -4,7 +4,6 @@ import { eq } from "drizzle-orm";
 import Markdown from "react-markdown";
 import "./markdown-styles.css";
 
-
 // Could check the url for the title and then search the database for the title to get the relevant data for the page
 export default async function Project({ params }: { params: { title: string } }) {
 	const { title } = params;

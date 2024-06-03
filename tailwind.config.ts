@@ -14,15 +14,15 @@ const config: Config = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      "white": '#F9FBFF',
-      "black": '#142135',
-      "primary": '#98BCF3',
-      "secondary": '#A6F6FF',
-      "tertiary": '#BEFFF7',
-      "accent": '#9EDDFF',
-      "secondl": '#D8F7FB',
-      "priml": '#CCDCF4',
-      "bl2": '#5B687C'
+      "white": '#EDF2F6',
+      "black": '#040D15',
+      "primary": '#99D8FF',
+      "secondary": '#A1E8CC',
+      "tertiary": '#DAFBFF',
+      "accent": '#75D4A1',
+      "secondl": '#DFF1EE',
+      "priml": '#DDEDF9',
+      "black2": '#5B687C'
     }
   },
   plugins: [
