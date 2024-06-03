@@ -2,9 +2,9 @@
 // Does not need anything fancy just needs to be able to send a email or fake sending an email cause its kinda a hassle (maybe emailjs?)
 export default function Contact() {
 	return (
-		<main className="p-10 mx-24 rounded-lg mb-36 md:flex md:justify-between bg-secondl">
+		<main className="py-16 mx-24 my-8 rounded-lg px-36 mb-36 md:flex md:justify-between bg-secondl">
 			<div>
-				<h1 className="text-4xl font-bold font-rcb">Lets chat</h1>
+				<h1 className="text-5xl font-bold font-rcb">Lets chat</h1>
 				<div>
 					<form className="w-1/2 font-ws">
 						<div className="flex gap-10 my-8">

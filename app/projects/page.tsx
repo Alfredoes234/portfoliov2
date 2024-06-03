@@ -2,12 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { db } from "@/utils/db/db";
 import { projects } from "@/utils/db/schema";
+import { Categories } from "@/components/button";
 
 export default async function Projects() {
 	const project = await db.select().from(projects);
 	return (
 		<main className="m-24">
-			<h1 className="my-5 text-4xl font-bold font-rcb">My projects</h1>
+			<div className="flex justify-between">
+				<h1 className="my-5 text-4xl font-bold font-rcb">My projects</h1>
+				<div className="my-5">
+					<Categories />
+				</div>
+			</div>
 			<div className="flex gap-12 py-10">
 				{project.map(function (projects) {
 					return (
