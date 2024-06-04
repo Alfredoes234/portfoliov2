@@ -4,7 +4,7 @@ const config = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
-    ...(process.env.NODE_ENV === 'production' ? { cssnano: { preset: 'cssnano-preset-advanced', discardComments: false } } : {})
+    ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
   },
 };
 
