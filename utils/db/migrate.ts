@@ -1,3 +1,4 @@
+import 'server-only';
 import 'dotenv/config';
 import { db } from './db';
 import { migrate } from 'drizzle-orm/node-postgres/migrator';

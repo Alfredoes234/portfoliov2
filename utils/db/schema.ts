@@ -1,3 +1,4 @@
+import 'server-only';
 import { integer, pgEnum, pgTable, serial, text, uniqueIndex, varchar } from 'drizzle-orm/pg-core';
 
 const skills = pgTable('skills', {

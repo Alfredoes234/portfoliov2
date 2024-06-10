@@ -17,7 +17,7 @@ export default async function Projects() {
 			<div className="flex gap-12 py-10">
 				{project.map(function (projects) {
 					return (
-						<Link href={`/projects/${projects.title}`} key={projects.id} className="w-1/3 p-8 transition duration-500 ease-in-out rounded-lg bg-secondl hover:bg-secondary ">
+						<Link href={`/projects/${projects.title}`} key={projects.id} className="w-1/3 p-8 transition duration-1000 ease-in-out rounded-lg bg-secondl hover:bg-secondary ">
 							<Image src={projects.img || "/images/baloon.webp"} width={1920} height={1080} alt={projects.imgAlt || ""} priority={true} className="w-full h-auto rounded" />
 							<div className="my-5">
 								<h2 className="text-xl font-semibold capitalize font-rcb">{projects.title}</h2>
