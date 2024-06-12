@@ -1,23 +1,7 @@
-'use client';
-
+import { handleSubmit } from "@/utils/handler";
 
 // Does not need anything fancy just needs to be able to send a email or fake sending an email cause its kinda a hassle (maybe emailjs?)
 export default function Contact() {
-	const handleSubmit = async (event: any) => {
-		event.preventDefault();
-		const formData = new FormData(event.target);
-		try {
-			let response = await fetch('/api/submit', {
-				method: 'POST',
-				body: formData,
-			});
-			let res = await response.json();
-			console.log(`${res.name} ${res.email} ${res.message}`);
-		} catch (error) {
-			// Handle error
-			console.error('Error submitting form:', error);
-		}
-	};
 	return (
 		<main className="py-16 mx-24 my-8 rounded-lg px-36 mb-36 md:flex md:justify-between bg-secondl">
 			<div>

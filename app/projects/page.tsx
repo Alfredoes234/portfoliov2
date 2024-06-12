@@ -18,7 +18,7 @@ export default async function Projects() {
 				{project.map(function (projects) {
 					return (
 						<Link href={`/projects/${projects.title}`} key={projects.id} className="w-1/3 p-8 transition duration-1000 ease-in-out rounded-lg bg-secondl hover:bg-secondary ">
-							<Image src={projects.img || "/images/baloon.webp"} width={1920} height={1080} alt={projects.imgAlt || ""} priority={true} className="w-full h-auto rounded" />
+							<Image src={projects.img || "/images/baloon.webp"} alt={projects.imgAlt || ""} width={720} height={1280} priority={true} className="w-full h-auto rounded" />
 							<div className="my-5">
 								<h2 className="text-xl font-semibold capitalize font-rcb">{projects.title}</h2>
 								<p className="mb-10 font-ws">{projects.brief}</p>
@@ -30,3 +30,4 @@ export default async function Projects() {
 		</main>
 	)
 }
+

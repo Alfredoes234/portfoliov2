@@ -27,16 +27,17 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
 
+# Unlighthouse
+.unlighthouse
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-
-.env
 
 # Drizzle
 /drizzle
