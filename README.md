@@ -43,3 +43,12 @@ To learn more about Next.js, take a look at the following resources:
 - NextJS
 - TailwindCSS
 - GSAP
+
+#### TODO
+
+This is something I could do for the site:
+
+- [ ] Add some animation to parts of the website and adventure into it (Through gsap or framer motion)
+- [ ] Query the github API to get some useful data back that can be displayed in a cool way (Graph stuff with maybe [recharts](https://recharts.org/en-US/))
+- [ ] Tags to project entries so you can click buttons that will sort it by tags (Filters button with popup card with maybe [reactjs-popup](https://www.npmjs.com/package/reactjs-popup))
+- [ ] Might redo the colours or redo the background colour as I think it will be better having a lighter colour
